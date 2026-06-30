@@ -73,4 +73,25 @@ function nhif (basic_salary,benefits){
     }else if ( gross_salary>=100000){
         nhif = 1700
     }
+    return nhif
+
 }
+
+function nssf(gross_salary){
+    if (gross_salary>18000){
+        nssf=0.16*gross_salary
+        res= nssf
+    }
+    
+    else {
+        res='Inelligile for Nssf '
+    } 
+
+}
+
+
+function NSDF(gross_salary){
+    NSDF=gross_salary*0.015
+    return nsdf
+}
+// function taxable_income()
